@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+        integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>ohmyfood</title>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <p class="header__logo logo">ohmyfood</p>
+    </header>
+    <main>
+        <!--section search-->
+        <section class="section__search">
+            <div class="search__input">
+                <i class="fa-solid fa-location-dot search--icon"></i>
+                <input class="search--input" type="text" placeholder="Paris, Belleville">
+            </div>
+        </section>
+        <!--section feature-->
+        <section class="section__feature">
+            <h1 class="feature__heading-1 heading-1">Réservez le menu qui vous convient</h1>
+            <p class="feature__text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+            <button class="btn--gradient">Explorer nos restaurants</button>
+        </section>
+        <!--section functioning-->
+        <section class="section__functioning">
+            <h1 class="function__heading-1 heading-1">Fonctionnement</h1>
+            <ul class="function__wrapper">
+                <li class="wrapper__list">
+                    <a href="#">
+                        <p class="list-1__number number">1</p>
+                        <i class="list-1__icon fa-solid fa-mobile-screen-button fa-lg icon"></i>
+                        <p class="list-1__text">Choisissez un restaurant</p>
+                    </a>
+                </li>
+                <li class="wrapper__list">
+                    <a href="#">
+                        <p class="list-2__number number">2</p>
+                        <i class="list-2__icon fa-solid fa-list fa-lg icon"></i>
+                        <p class="list-2__text">Composez votre menu</p>
+                    </a>
+                </li>
+                <li class="wrapper__list">
+                    <a href="#">
+                        <p class="list-3__number number">3</p>
+                        <i class="list-3__icon fa-solid fa-store fa-lg icon"></i>
+                        <p class="list-3__text">Dégustez au restaurant</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!--section restaurants-->
+        <section class="section__restaurants">
+            <h1 class="restaurants__heading-1 heading-1">Restaurants</h1>
+            <div class="restaurants__wrapper">
+                <div class="wrapper__card">
+                    <img class="card-1__img image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        alt="restaurant la palette du goût" />
+                    <div class="card-1__lower card__lower">
+                        <h3 class="lower__heading-3 heading-3">La palette du goût</h3>
+                        <i class="fa-solid fa-heart icon--fill fa-xl"></i>
+                        <i class="fa-regular fa-heart icon--border fa-xl"></i>
+                        <p class="lower__location">Ménilmontant</p>
+                    </div>
+                    <p class="card-1__new card__new">Nouveau</p>
+                </div>
+                <div class="wrapper__card">
+                    <img class="card-2__img image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                        alt="restaurant la note enchantée">
+                    <div class="card-2__lower card__lower">
+                        <h3 class="lower__heading-3 heading-3">La note enchantée</h3>
+                        <i class="fa-solid fa-heart icon--fill fa-xl"></i>
+                        <i class="fa-regular fa-heart icon--border fa-xl"></i>
+                        <p class="lower__location">Charonne</p>
+                    </div>
+                    <p class="card-2__new card__new">Nouveau</p>
+                </div>
+                <div class="wrapper__card">
+                    <img class="card-3__img image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                        alt="restaurant A la française" />
+                    <div class="card-3__lower card__lower">
+                        <h3 class="lower__heading-3 heading-3">A la française</h3>
+                        <div class="icon--toggle">
+                            <i class="fa-solid fa-heart icon--fill fa-xl"></i>
+                            <i class="fa-regular fa-heart icon--border fa-xl"></i>
+                        </div>
+                        <p class="lower__location">Cité Rouge</p>
+                    </div>
+                    <p class="card-3__new card__new">Nouveau</p>
+                </div>
+                <div class="wrapper__card">
+                    <img class="card-4__img image"
+                        src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                        alt="restaurant le délice des sens" />
+                    <div class="card-4__lower card__lower">
+                        <h3 class="lower__heading-3 heading-3">Le délice des sens</h3>
+                        <i class="fa-solid fa-heart icon--fill fa-xl"></i>
+                        <i class="fa-regular fa-heart icon--border fa-xl"></i>
+                        <p class="lower__location">Folie-Méricourt</p>
+                    </div>
+                    <p class="card-4__new card__new">Nouveau</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
+        <p class="footer__logo logo">ohmyfood</p>
+        <ul class="footer_wrapper">
+            <li class="wrapper__suggest">
+                <i class="suggest__icon"></i>
+                <p class="suggest__text">Proposer un restaurant</p>
+            </li>
+            <li class="wrapper__partnership">
+                <i class="partnership__icon"></i>
+                <p class="partnership__text">Devenir partenaire</p>
+            </li>
+            <li class="wrapper__legal">
+                <p class="legal__text">Mentions légales</p>
+            </li>
+            <li class="wrapper__contact">
+                <p class="contact__text">Contact</p>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
