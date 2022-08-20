@@ -26,13 +26,23 @@ $font-weight-bold: 700;
 body {
     width: 100%;
     background-color: $bck-clr-xlight;
+    a:link {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 //header//
 .header {
     width: 100%;
 }
+.arrow--link {
+    padding-left: 1.5rem;
+    padding-right: 3.4rem;
+}
 .header__logo {
+    display: inline-block;
+    text-align: center;
     padding: 1rem 0 0.4rem 0;
 }
 
@@ -54,14 +64,110 @@ section {
     display: inline-block;
     padding-left: 28%;
          input {
-            width: 80%;
+            width:58%;
             background: none;
             font-size: 1.031rem;
             font-weight: $font-weight-medium;
             border: none;
             opacity: 1;
             padding-left: 1rem;
-        }
+            &:focus {
+                background:rgba(147,86,220,0.1);
+            }
+            &:focus-visible {
+                outline:none;
+            }
+        }        
+}
+
+//section feature//
+.section__feature--image {
+    img {
+        object-fit: cover;
+    }
+}
+
+//section menu//
+.section__menu {
+    position: relative;
+    width: auto;
+    padding: 2rem 0 2rem 0;
+    background: $bck-clr-light;
+    border-radius: 2.5rem 2.5rem 0 0;
+    margin-top: -3.1rem;
+    &--heading-1 {
+        font-family: 'Shrikhand', cursive, sans-serif;
+        font-size: 1.6rem;
+        padding: 0 0 2rem 1rem;
+    }
+    &--wrapper {
+        display: flex;
+        flex-direction: column; 
+    }
+} 
+.wrapper__entrees, .wrapper__plats, .wrapper__desserts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &--heading-4 {
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1rem;
+        padding: 0 0 2rem 1rem; 
+    }
+    &--heading-4:after {
+        content:"";
+        position: absolute;
+        background: $clr-tertiary;
+        top: 1.4rem;
+        left: 1rem;
+        width: 11.5%;
+        height: 3px;
+    }
+    &--wrapper {
+        padding: 0 1rem;
+    }
+}
+.card {
+    position:relative;
+    width: 100%;
+    background:white;
+    border-radius: 0.85rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    &--title {
+        padding: 1rem 0 0.1rem 1rem;
+        font-weight: $font-weight-bold;
+        font-size: 1.1rem;
+    }
+    &--details {
+        padding: 0 0 1rem 1rem;
+        font-size: 0.85rem;
+    }
+    &--price {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 0.85rem;
+        font-weight: $font-weight-bold;
+    }
+}
+.section__menu--btn {
+
+    margin:2rem 0 2rem 0;
+    font-size: 1rem;
+    font-weight: $font-weight-medium;
+    color: $font-clr-light;
+    padding: 0.9rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    background: $clr-gradient;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    &:hover {
+        background: linear-gradient(180deg, rgba(255,121,218,0.9) 0%, rgba(147,86,220,0.9) 100%);
+        box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+    }
 }
 
 //section feature//
@@ -180,13 +286,12 @@ section {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
     height: 25%;
     width: 100%;
     max-width: 600px;
     background: $bck-clr-xlight;
     border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 1rem 0.5rem 0.5rem rgba(0,0,0,0.1);
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.1);
     @media screen and (min-width: 600px) {
         width: calc(50% - 1rem);
         max-width: 100%;
@@ -212,9 +317,27 @@ section {
         border-radius: 0.2rem;
     }
 }
+.restaurants__wrapper {
+    a {
+        width:100%;
+        &:hover {
+            .wrapper__card {
+                box-shadow: 5px 10px 15px rgba(0,0,0,0.2);
+                background: rgba($clr-tertiary,0.1);
+            }
+            .card__lower {
+                // color: lighten($clr-primary, 10%);
+            }
+            .image {
+                opacity: 0.5;
+
+            }
+        }
+    }
+}
 .card__lower {
-    position: relative;
     width: 100%;
+    color: $font-clr-dark;
     .heading-3 {
         padding: 1rem 0 0.2rem 1rem;
         font-size: 1.15rem;
@@ -227,14 +350,14 @@ section {
         display: block;
         position: absolute;
         background: $bck-clr-xlight;
-        top: 1.7rem;
-        right: 1rem;
+        bottom: 2.5rem;
+        right: 2rem;
     }
     .icon--fill {
         display:none;
         position: absolute;
-        top: 1.7rem;
-        right: 1rem;
+        bottom: 2.5rem;
+        right: 2rem;
     }
 }
 .icon--toggle {
@@ -267,7 +390,7 @@ footer {
         padding: 1rem 0 1rem 1rem;
     }
     .footer_wrapper {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -276,5 +399,15 @@ footer {
     li {
         padding: 0 0 0 1rem;
         width: 100%;
+        p {
+            width:auto;
+            color:$font-clr-light;
+        }
+    }
+    a:hover {
+        p {
+        color: $clr-tertiary;
+        transition: all 0.2s ease-in-out;
+        }
     }
 }
