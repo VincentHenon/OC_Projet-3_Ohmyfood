@@ -23,12 +23,12 @@
     </header>
     <main>
         <!--section search-->
-        <section class="section__search">
+        <div class="section__search">
             <div class="search__input">
                 <i class="fa-solid fa-location-dot search--icon"></i>
                 <input class="search--input" type="text" placeholder="Paris, Belleville">
             </div>
-        </section>
+        </div>
         <!--section feature-->
         <section class="section__feature">
             <h1 class="feature__heading-1 heading-1">Réservez le menu qui vous convient</h1>
@@ -63,63 +63,66 @@
             </ul>
         </section>
         <!--section restaurants-->
-        <section class="section__restaurants">
+        <section class="restaurants">
             <h1 class="restaurants__heading-1 heading-1">Restaurants</h1>
             <div class="restaurants__wrapper">
                 <a href="./pages/la-palette-du-gout.html">
-                    <div class="wrapper__card">
-                        <img class="card-1__img image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    <div class="card-resto">
+                        <img class="card-resto__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                             alt="restaurant la palette du goût" />
-                        <div class="card-1__lower card__lower">
-                            <h3 class="lower__heading-3 heading-3">La palette du goût</h3>
-                            <i class="fa-solid fa-heart icon--fill fa-xl"></i>
-                            <i class="fa-regular fa-heart icon--border fa-xl"></i>
-                            <p class="lower__location">Ménilmontant</p>
-                            <p class="card-1__new card__new">Nouveau</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="wrapper__card">
-                        <img class="card-2__img image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                            alt="restaurant la note enchantée">
-                        <div class="card-2__lower card__lower">
-                            <h3 class="lower__heading-3 heading-3">La note enchantée</h3>
-                            <i class="fa-solid fa-heart icon--fill fa-xl"></i>
-                            <i class="fa-regular fa-heart icon--border fa-xl"></i>
-                            <p class="lower__location">Charonne</p>
-                        </div>
-                        <p class="card-2__new card__new">Nouveau</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="wrapper__card">
-                        <img class="card-3__img image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                            alt="restaurant A la française" />
-                        <div class="card-3__lower card__lower">
-                            <h3 class="lower__heading-3 heading-3">A la française</h3>
-                            <div class="icon--toggle">
-                                <i class="fa-solid fa-heart icon--fill fa-xl"></i>
-                                <i class="fa-regular fa-heart icon--border fa-xl"></i>
+                        <div class="card-resto__lower">
+                            <h3 class="card-resto__lower--heading-3 heading-3">La palette du goût</h3>
+                            <div class="icon__toggle">
+                                <i class="icon__toggle--fill fa-solid fa-heart fa-xl"></i>
+                                <i class="icon__toggle--border fa-regular fa-heart fa-xl"></i>
                             </div>
-                            <p class="lower__location">Cité Rouge</p>
-
+                            <p class="card-resto__lower--location">Ménilmontant</p>
+                            <p class="card-resto__lower--new">Nouveau</p>
                         </div>
-                        <p class="card-3__new card__new">Nouveau</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="wrapper__card">
-                        <img class="card-4__img image"
+                <a href="./pages/la-note-enchantee.html">
+                    <div class="card-resto">
+                        <img class="card-resto__image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                            alt="restaurant la note enchantée" />
+                        <div class="card-resto__lower">
+                            <h3 class="card-resto__lower--heading-3">La note enchantée</h3>
+                            <div class="icon__toggle">
+                                <i class="icon__toggle--fill fa-solid fa-heart fa-xl"></i>
+                                <i class="icon__toggle--border fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <p class="card-resto__lower--location">Charonne</p>
+                            <p class="card-resto__lower--new">Nouveau</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/a-la-francaise.html">
+                    <div class="card-resto">
+                        <img class="card-resto__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="restaurant à la française" />
+                        <div class="card-resto__lower">
+                            <h3 class="card-resto__lower--heading-3">A la française</h3>
+                            <div class="icon__toggle">
+                                <i class="icon__toggle--fill fa-solid fa-heart fa-xl"></i>
+                                <i class="icon__toggle--border fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <p class="card-resto__lower--location">Cité Rouge</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/le-delice-des-sens.html">
+                    <div class="card-resto">
+                        <img class="card-resto__image"
                             src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                             alt="restaurant le délice des sens" />
-                        <div class="card-4__lower card__lower">
-                            <h3 class="lower__heading-3 heading-3">Le délice des sens</h3>
-                            <i class="fa-solid fa-heart icon--fill fa-xl"></i>
-                            <i class="fa-regular fa-heart icon--border fa-xl"></i>
-                            <p class="lower__location">Folie-Méricourt</p>
+                        <div class="card-resto__lower">
+                            <h3 class="card-resto__lower--heading-3">Le délice des sens</h3>
+                            <div class="icon__toggle">
+                                <i class="icon__toggle--fill fa-solid fa-heart fa-xl"></i>
+                                <i class="icon__toggle--border fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <p class="card-resto__lower--location">Folie-Méricourt</p>
                         </div>
-                        <p class="card-4__new card__new">Nouveau</p>
                     </div>
                 </a>
             </div>
@@ -131,13 +134,13 @@
         <ul class="footer_wrapper">
             <li class="wrapper__suggest">
                 <a href="#">
-                    <i class="suggest__icon"></i>
+                    <i class="suggest__icon fa-solid fa-utensils"></i>
                     <p class="suggest__text">Proposer un restaurant</p>
                 </a>
             </li>
             <li class="wrapper__partnership">
                 <a href="#">
-                    <i class="partnership__icon"></i>
+                    <i class="partnership__icon fa-solid fa-handshake-angle"></i>
                     <p class="partnership__text">Devenir partenaire</p>
                 </a>
             </li>
