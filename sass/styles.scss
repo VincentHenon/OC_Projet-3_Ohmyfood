@@ -2,6 +2,9 @@
 @import "../libs/fonts.scss";
 @import "../libs/variables.scss";
 
+//mixin pour repsonsive pour chaque format d'ecran
+//découper le scss par fontion
+
 //body//
 body {
     width: 100%;
@@ -221,7 +224,7 @@ section {
         transition: transform 0.8s ease;
     }
 }
-.card:hover .card--animation{
+.card:hover .card--animation{ 
     background: $clr-tertiary;
     margin-right: 0;
 }
