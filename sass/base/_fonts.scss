@@ -1,0 +1,91 @@
+@import "../sass-utils/variables";
+
+//default root font//
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+//logo fonts//
+.header__logo,
+.footer__logo,
+.menu__heading {
+  font-family: "Shrikhand", cursive, sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+.header__logo {
+  font-size: $fs-xxlarge;
+}
+
+.footer__logo {
+  font-size: $fs-large;
+}
+
+.menu__heading {
+  font-size: 1.6rem;
+}
+
+//default fonts//
+h1 {
+  font-weight: $font-weight-bold;
+  font-size: $fs-xlarge;
+}
+
+h2 {
+  font-size: $fs-large;
+  font-weight: $font-weight-xlight;
+}
+
+h3 {
+  font-size: $fs-large;
+  font-weight: $font-weight-bold;
+}
+
+h4 {
+  font-size: $fs-medium;
+  font-weight: $font-weight-medium;
+}
+
+h5 {
+  font-size: $fs-medium;
+  font-weight: $font-weight-xlight;
+}
+
+//search fonts//
+input::placeholder {
+  color: $font-clr-dark;
+  font-size: $fs-medium;
+  font-weight: $font-weight-medium;
+  opacity: 0.8;
+}
+
+//button font//
+.btn--gradient {
+  font-size: $fs-small;
+  font-weight: $font-weight-regular;
+  color: $font-clr-light;
+}
+
+//operation fonts//
+.list__number {
+  font-size: $fs-xsmall;
+  color: $font-clr-light;
+}
+
+//menu fonts//
+.card__title {
+  font-weight: $font-weight-regular;
+  font-size: 1.1rem;
+}
+
+.card__details {
+  font-size: $fs-small;
+  font-weight: $font-weight-xlight;
+}
+
+.card__price {
+  font-size: $fs-xsmall;
+  font-weight: $font-weight-bold;
+}

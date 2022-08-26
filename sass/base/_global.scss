@@ -1,0 +1,15 @@
+@import "../sass-utils/variables";
+
+body {
+    width: 100%;
+    background: $bck-clr-xlight;
+
+    footer,
+    header {
+        width: 100%;
+    }
+
+    section {
+        padding: 0 1rem;
+    }
+}

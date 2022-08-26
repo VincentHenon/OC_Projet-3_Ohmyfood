@@ -1,0 +1,26 @@
+@import "../sass-utils/variables";
+
+//section search//
+.search {
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    background-color: $bck-clr-medium;
+    border-top: 2px solid #cecece;
+    display: flex;
+    justify-content: center;
+
+    &__input {
+        width: auto; //58%;
+        background: none;
+        border-style: none;
+        margin-left: 1rem;
+
+        &:focus {
+            background: rgba(147, 86, 220, 0.1);
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}

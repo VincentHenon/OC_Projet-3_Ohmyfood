@@ -1,0 +1,41 @@
+//variables//
+
+//main colors//
+$clr-primary: #9356DC; //primary color
+$clr-secondary: #FF79DA; //secondary color
+$clr-tertiary: #99E2D0; //tertiary color
+
+
+//gradient colors//
+$clr-gradient: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+
+
+//background colors//
+$bck-clr-xlight: #ffffff; //extra light background color 
+$bck-clr-light: #f6f6f6; //light background color
+$bck-clr-medium: #eaeaea; //medium background color
+$bck-clr-dark: #353535; //dark background color
+
+
+//font colors//
+$font-clr-light: #fff; //light font color
+$font-clr-dark: #000; //dark font color
+$font-clr-green: #99E2D0; //green font color
+
+
+//font weight//
+$font-weight-xlight: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+
+//font sizes//
+$fs-xsmall: 0.875rem; //14px 
+$fs-small: 0.938rem; //15px
+$fs-medium: 1rem; //16px
+$fs-large: 1.125rem; //18px
+$fs-xlarge: 1.5rem; //24px
+$fs-xxlarge: 1.875rem;
