@@ -1,0 +1,46 @@
+@media screen and (min-width: 880px) {
+    header {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .search {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        width: 50%;
+        background: $bck-clr-xlight;
+        border-top: none;
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .operation ul {
+        flex-direction: row;
+
+        .list {
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .restaurants__wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+
+        a {
+            width: calc(50% - 1rem);
+            height: auto;
+
+            .card {
+                height: auto;
+            }
+        }
+    }
+}

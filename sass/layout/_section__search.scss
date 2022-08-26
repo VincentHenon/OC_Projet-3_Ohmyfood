@@ -9,8 +9,13 @@
     display: flex;
     justify-content: center;
 
+    &__block {
+        margin: auto;
+        width: auto;
+    }
+
     &__input {
-        width: auto; //58%;
+        width: 58%;
         background: none;
         border-style: none;
         margin-left: 1rem;

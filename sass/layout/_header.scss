@@ -1,15 +1,25 @@
 //header//
-.header {
+header {
     position: relative;
 
-    &__logo {
+    .header__logo {
         text-align: center;
         padding: 1rem 0 0.4rem 0;
     }
 
-    &__arrow {
+    .header__arrow {
         position: absolute;
         top: 2.4rem;
         left: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    header {
+        width: 50% !important;
+
+        &__logo {
+            text-align: center;
+        }
     }
 }

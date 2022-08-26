@@ -1,0 +1,24 @@
+.icon__toggle {
+    &--fill {
+        background-image: $clr-gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: cover;
+        color: transparent;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    &--border {
+        color: $font-clr-dark;
+        transition: opacity 1s ease;
+    }
+
+    &:hover .icon__toggle--fill {
+        opacity: 1;
+    }
+
+    &:hover .icon__toggle--border {
+        opacity: 0;
+    }
+}

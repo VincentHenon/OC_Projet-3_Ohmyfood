@@ -11,11 +11,13 @@
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/section__loader";
+@import "./layout/anim-cook";
 @import "./layout/section__search";
 @import "./layout/section__feature";
 @import "./layout/section__menu";
 @import "./layout/section__operation";
 @import "./layout/section__restaurants";
 @import "./layout/section__hero";
+@import "./layout/desktop-layout";
 
 //mixin pour responsive pour chaque format d'ecran
