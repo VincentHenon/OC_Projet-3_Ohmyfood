@@ -1,0 +1,50 @@
+//mixins//
+@mixin cardsAnimationDelay {
+
+    @for $i from 1 through 10 {
+        .card--#{$i} {
+            animation-delay: 0 + ($i * 0.1s);
+        }
+    }
+}
+
+@mixin cardsAnimationDelay-2 {
+    @for $i from 1 through 3 {
+        @if #{$i}==1 {
+
+            .entrees__cards:nth-child(#{$i}),
+            .plats__cards:nth-child(#{$i}),
+            .dessert__cards:nth-child(#{$i}) {
+                animation-delay: 0s+#{$i};
+            }
+        }
+
+        // @else if #{$i}==2 {
+
+        //     .entrees__cards:nth-child(2),
+        //     .plats__cards:nth-child(2),
+        //     .dessert__cards:nth-child(2) {
+        //         animation-delay: 0.2s;
+        //     }
+        // }
+
+        // @else {
+
+        //     .entrees__cards:nth-child(3),
+        //     .plats__cards:nth-child(3),
+        //     .dessert__cards:nth-child(3) {
+        //         animation-delay: 0.3s;
+        //     }
+        // }
+    }
+}
+
+@mixin boxShadowNotHover {
+
+    box-shadow: .5rem .7rem .7rem rgba(0, 0, 0, 0.1);
+}
+
+@mixin boxShadowHover {
+
+    box-shadow: .5rem .7rem 1rem rgba(0, 0, 0, 0.2);
+}

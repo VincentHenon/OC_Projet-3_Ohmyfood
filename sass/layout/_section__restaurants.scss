@@ -1,6 +1,4 @@
-@import "../sass-utils/variables";
-
-//restaurants//
+//section restaurants//
 .restaurants {
     width: 100%;
     background: $bck-clr-light;
@@ -22,7 +20,7 @@
             &:hover {
                 .card {
                     transform: scale(1.01);
-                    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+                    @include boxShadowHover;
                     background: rgba($clr-tertiary, 0.1);
 
                     img {
@@ -45,8 +43,9 @@
     min-width: 250px;
     background: $bck-clr-xlight;
     border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease-in-out;
+    @include boxShadowNotHover;
+    transition: all .5s ease-in-out;
+
 
     img {
         max-height: 175px;

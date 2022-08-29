@@ -1,5 +1,9 @@
 @import "../sass-utils/variables";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     background: $bck-clr-xlight;

@@ -1,17 +1,16 @@
-@import "../sass-utils/variables";
-
+//button component with gradient color//
 .btn--gradient {
     padding: .9rem 1.5rem;
     border-radius: 2rem;
     border: none;
     background: $clr-gradient;
     background-size: 120% 120%;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    @include boxShadowNotHover;
     transition: all 0.2s ease-in-out;
     animation: gradient 2s ease infinite;
 
     &:hover {
         background: linear-gradient(180deg, rgba(255, 121, 218, 0.8) 0%, rgba(147, 86, 220, 0.8) 100%);
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        @include boxShadowHover;
     }
 }

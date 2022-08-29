@@ -1,3 +1,4 @@
+//footer//
 footer {
     background: $bck-clr-dark;
     color: $font-clr-light;
@@ -60,6 +61,45 @@ footer {
                     background: $clr-tertiary;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 880px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        max-height: 200px;
+        gap: 10%;
+        padding: 1rem;
+    }
+
+    .footer__logo {
+        width: 30%;
+        font-size: $fs-gigantic;
+        text-align: center;
+    }
+
+    footer ul {
+        width: 68%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2%;
+
+        li {
+            width: 49%;
+            padding: 0.5rem;
+        }
+
+        li:nth-child(-n +2) {
+            margin-left: -1.875rem;
+        }
+
+        li:nth-child(4) {
+            margin-left: -1.875rem;
         }
     }
 }

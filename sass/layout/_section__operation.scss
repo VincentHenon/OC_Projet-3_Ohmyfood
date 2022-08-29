@@ -1,5 +1,3 @@
-@import "../sass-utils/variables";
-
 //section operation//
 .operation {
     padding-bottom: 4rem;
@@ -21,16 +19,22 @@
             background-color: $bck-clr-light;
             padding: 1.5rem 1.5rem;
             border-radius: 1.2rem;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            @include boxShadowNotHover;
             transition: all 0.3s ease-in-out;
 
             &:hover {
                 background-color: rgba(147, 86, 220, 0.1);
-                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+                @include boxShadowHover;
             }
 
             &:hover i {
                 color: $clr-primary;
+            }
+
+            a {
+                height: 30px;
+                display: flex;
+                align-items: center;
             }
 
             &__number {
@@ -43,13 +47,14 @@
             }
 
             &__icon {
-
+                display: inline-block;
                 color: #7e7e7e;
+                vertical-align: baseline;
                 transition: all 0.3s ease-in-out;
             }
 
             h4 {
-                padding-left: 1rem;
+                padding: 0 0 0 1rem;
                 display: inline-block;
             }
         }

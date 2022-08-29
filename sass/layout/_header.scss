@@ -13,13 +13,3 @@ header {
         left: 1.5rem;
     }
 }
-
-@media screen and (min-width: 880px) {
-    header {
-        width: 50% !important;
-
-        &__logo {
-            text-align: center;
-        }
-    }
-}
