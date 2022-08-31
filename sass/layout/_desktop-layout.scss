@@ -1,190 +1,27 @@
 //media queries desktop layout//
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
-    //header//
-    header {
-        width: 50% !important;
+    //     //menu//
+    //     .entrees__cards,
+    //     .plats__cards,
+    //     .desserts__cards {
+    //         width: 100%;
+    //         display: flex;
+    //         flex-direction: row;
+    //         padding: 0 1rem;
+    //         gap: 1rem;
+    //     }
+    // }
 
-        &__logo {
-            text-align: center;
-        }
-    }
-
-    //search//
-    .search {
-        position: absolute;
-        top: 1rem;
-        right: 0;
-        width: 50%;
-        background: $bck-clr-xlight;
-        border-top: none;
-        padding-top: 1rem;
-    }
-
-    //operation//
-    .operation ul {
-        flex-direction: row;
-
-        .list {
-            width: 30%;
-        }
-    }
-
-    //hero//
-    .section__hero--image img {
-        width: 100%;
-        height: 300px;
-    }
-
-    //restaurants//
-    .restaurants__wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        gap: 2rem;
-
-        a {
-            width: calc(50% - 1rem);
-            height: auto;
-
-            .card {
-                height: auto;
-            }
-        }
-    }
-
-    //menu//
-    .entrees__cards,
-    .plats__cards,
-    .desserts__cards {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 0 1rem;
-        gap: 1rem;
-    }
-
-    .card {
-        min-width: 100px;
-    }
-
-    //footer//
-    footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 200px;
-        //gap: 10%;
-        padding: 1rem;
-        border: 1px solid white;
-    }
-
-    .footer__logo {
-        width: 30%;
-        font-size: $fs-gigantic;
-        text-align: center;
-        border: 1px solid red;
-    }
-
-    footer ul {
-        border: 1px solid green;
-        a width: 30%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 2%;
-
-        li {
-            width: 49%;
-            border: 1px solid blue;
-            // padding: 0.5rem;
-        }
-
-        li:nth-child(-n +2) {
-            // margin-left: -1.875rem;
-        }
-
-        li:nth-child(4) {
-            // margin-left: -1.875rem;
-        }
-    }
+    // .card {
+    //     min-width: 100px;
 }
 
 @media screen and (min-width: 1025px) {
-    //and (max-width: 1800px) {
 
-    //header//
-    header {
-        width: 50% !important;
-
-        &__logo {
-            text-align: center;
-        }
-    }
-
-    //search//
-    .search {
-        position: absolute;
-        top: 1rem;
-        right: 0;
-        width: 50%;
-        background: $bck-clr-xlight;
-        border-top: none;
-        padding-top: 1rem;
-    }
-
-    //hero//
-    .section__hero--image img {
-        width: 100%;
-        height: 300px;
-    }
-
-    //menu//
-    .menu__wrapper {
-        flex-direction: row;
-        @include cardsAnimationDelay-2;
-    }
-
-    //operation//
-    .operation ul {
-        flex-direction: row;
-
-        .list {
-            width: 30%;
-        }
-    }
-
-    //restaurants//
-    .restaurants__wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        gap: 2rem;
-
-        a {
-            width: 22%;
-            height: auto;
-
-            .card {
-                min-height: 270px;
-                min-width: 0;
-            }
-
-            img {
-                min-height: 200px;
-            }
-        }
-
-        .icon__toggle {
-            .bi {
-                bottom: 2%;
-                right: 5%;
-            }
-        }
-    }
+    //     //menu//
+    //     .menu__wrapper {
+    //         flex-direction: row;
+    //         //@include cardsAnimationDelay-2;
+    //     }
 }

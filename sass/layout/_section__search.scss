@@ -7,6 +7,17 @@
     display: flex;
     justify-content: center;
 
+    //media queries "tablette et desktop"
+    @include responsive(tablet-desktop) {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        width: 20%;
+        background: $bck-clr-xlight;
+        border-top: none;
+        padding-top: 1rem;
+    }
+
     &__block {
         margin: auto;
         width: auto;

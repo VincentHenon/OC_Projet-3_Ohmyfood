@@ -278,6 +278,11 @@ body section {
 header {
   position: relative;
 }
+@media only screen and (min-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
 header .header__logo {
   text-align: center;
   padding: 1rem 0 0.4rem 0;
@@ -293,8 +298,40 @@ footer {
   color: #fff;
   padding: 0 0 2rem 0.5rem;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 1rem;
+  }
+}
 footer .footer__logo {
   padding: 1rem 0 1rem 1rem;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  footer .footer__logo {
+    width: 41%;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  footer .footer__logo {
+    width: 35%;
+    font-size: 1.5rem;
+  }
 }
 footer ul {
   width: auto;
@@ -302,9 +339,42 @@ footer ul {
   flex-direction: column;
   gap: 0.8rem;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  footer ul {
+    width: 59%;
+    height: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  footer ul {
+    width: 65%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2%;
+  }
+}
 footer ul li {
   display: inline-block;
   padding: 0 0 0 1rem;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  footer ul li {
+    width: 49%;
+    padding: 0.125rem 0.125rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  footer ul li {
+    width: auto;
+    padding: 0;
+  }
 }
 footer ul li a .icon {
   color: #fff;
@@ -342,39 +412,6 @@ footer ul li a p:hover::after {
   background: #99E2D0;
 }
 
-@media screen and (min-width: 880px) {
-  footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    max-height: 200px;
-    gap: 10%;
-    padding: 1rem;
-  }
-  .footer__logo {
-    width: 30%;
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  footer ul {
-    width: 68%;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2%;
-  }
-  footer ul li {
-    width: 49%;
-    padding: 0.5rem;
-  }
-  footer ul li:nth-child(-n+2) {
-    margin-left: -1.875rem;
-  }
-  footer ul li:nth-child(4) {
-    margin-left: -1.875rem;
-  }
-}
 .loader {
   position: fixed;
   width: 100%;
@@ -715,12 +752,23 @@ footer ul li a p:hover::after {
   display: flex;
   justify-content: center;
 }
+@media only screen and (min-width: 768px) {
+  .search {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    width: 20%;
+    background: #ffffff;
+    border-top: none;
+    padding-top: 1rem;
+  }
+}
 .search__block {
   margin: auto;
   width: auto;
 }
 .search__input {
-  width: 58%;
+  width: 127px;
   background: none;
   border-style: none;
   margin-left: 1rem;
@@ -767,6 +815,12 @@ footer ul li a p:hover::after {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 768px) {
+  .menu__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .menu__button {
   width: 100%;
   display: flex;
@@ -786,6 +840,13 @@ footer ul li a p:hover::after {
   flex-direction: column;
   padding: 0 1rem;
 }
+@media only screen and (min-width: 768px) {
+  .entrees__wrapper,
+.plats__wrapper,
+.desserts__wrapper {
+    width: 33.33%;
+  }
+}
 .entrees__wrapper h5,
 .plats__wrapper h5,
 .desserts__wrapper h5 {
@@ -801,81 +862,13 @@ footer ul li a p:hover::after {
   background: #99E2D0;
   top: 3rem;
   left: 0;
-  width: 11%;
+  width: 38px;
   height: 3px;
 }
 .entrees__wrapper__cards,
 .plats__wrapper__cards,
 .desserts__wrapper__cards {
   padding: 0 1rem;
-}
-.entrees__wrapper .card,
-.plats__wrapper .card,
-.desserts__wrapper .card {
-  -webkit-animation: fadeInSlide 1.5s ease-in;
-          animation: fadeInSlide 1.5s ease-in;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-.entrees__wrapper .card--1,
-.plats__wrapper .card--1,
-.desserts__wrapper .card--1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-.entrees__wrapper .card--2,
-.plats__wrapper .card--2,
-.desserts__wrapper .card--2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-.entrees__wrapper .card--3,
-.plats__wrapper .card--3,
-.desserts__wrapper .card--3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-.entrees__wrapper .card--4,
-.plats__wrapper .card--4,
-.desserts__wrapper .card--4 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-.entrees__wrapper .card--5,
-.plats__wrapper .card--5,
-.desserts__wrapper .card--5 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.entrees__wrapper .card--6,
-.plats__wrapper .card--6,
-.desserts__wrapper .card--6 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-.entrees__wrapper .card--7,
-.plats__wrapper .card--7,
-.desserts__wrapper .card--7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-.entrees__wrapper .card--8,
-.plats__wrapper .card--8,
-.desserts__wrapper .card--8 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-.entrees__wrapper .card--9,
-.plats__wrapper .card--9,
-.desserts__wrapper .card--9 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-.entrees__wrapper .card--10,
-.plats__wrapper .card--10,
-.desserts__wrapper .card--10 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
 .card {
@@ -890,6 +883,50 @@ footer ul li a p:hover::after {
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
+  -webkit-animation: fadeInSlide 1.5s ease-in;
+          animation: fadeInSlide 1.5s ease-in;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.card .card--1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.card .card--2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.card .card--3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.card .card--4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.card .card--5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.card .card--6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.card .card--7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+.card .card--8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.card .card--9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.card .card--10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 .card__title-details {
   overflow: hidden;
@@ -912,6 +949,7 @@ footer ul li a p:hover::after {
 }
 .card__animation {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #FF79DA;
@@ -954,6 +992,12 @@ footer ul li a p:hover::after {
   flex-direction: column;
   gap: 1.5rem;
 }
+@media only screen and (min-width: 768px) {
+  .operation ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .operation ul .list {
   position: relative;
   width: 90%;
@@ -963,6 +1007,11 @@ footer ul li a p:hover::after {
   border-radius: 1.2rem;
   box-shadow: 0.5rem 0.7rem 0.7rem rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
+}
+@media only screen and (min-width: 768px) {
+  .operation ul .list {
+    width: 30%;
+  }
 }
 .operation ul .list:hover {
   background-color: rgba(147, 86, 220, 0.1);
@@ -1009,8 +1058,38 @@ footer ul li a p:hover::after {
   gap: 2rem;
   flex-wrap: nowrap;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .restaurants__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+  }
+}
 .restaurants__wrapper a {
   width: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants__wrapper a {
+    width: calc(50% - 1rem);
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .restaurants__wrapper a {
+    width: 22%;
+    height: auto;
+  }
 }
 .restaurants__wrapper a:hover .card {
   transform: scale(1.01);
@@ -1022,7 +1101,7 @@ footer ul li a p:hover::after {
   transform: scale(1.1);
 }
 
-.card {
+.restaurants .card {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -1035,7 +1114,21 @@ footer ul li a p:hover::after {
   box-shadow: 0.5rem 0.7rem 0.7rem rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease-in-out;
 }
-.card img {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants .card {
+    height: auto;
+    min-width: 100px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .restaurants .card {
+    min-width: 0;
+    height: 100%;
+    max-height: 275px;
+    width: 100%;
+  }
+}
+.restaurants .card img {
   max-height: 175px;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
@@ -1043,18 +1136,23 @@ footer ul li a p:hover::after {
      object-fit: cover;
   transition: all 0.5s ease-in-out;
 }
-.card .card__lower {
+@media only screen and (min-width: 1025px) {
+  .restaurants .card img {
+    min-height: 200px;
+  }
+}
+.restaurants .card .card__lower {
   min-height: 35%;
   width: 100%;
   color: #000;
 }
-.card h3 {
+.restaurants .card h3 {
   padding: 1rem 0 0.2rem 1rem;
 }
-.card .card__location {
+.restaurants .card .card__location {
   padding: 0 0rem 1rem 1rem;
 }
-.card .card__new {
+.restaurants .card .card__new {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -1065,11 +1163,17 @@ footer ul li a p:hover::after {
   padding: 0.4rem 0.7rem;
   border-radius: 0.2rem;
 }
-.card .icon__toggle .bi {
+.restaurants .card .icon__toggle .bi {
   position: absolute;
   bottom: 1.5rem;
   right: 1.5rem;
   font-size: 1.5rem;
+}
+@media only screen and (min-width: 1025px) {
+  .restaurants .card .icon__toggle .bi {
+    bottom: 1rem;
+    right: 0.5rem;
+  }
 }
 
 .section__hero--image img {
@@ -1078,138 +1182,9 @@ footer ul li a p:hover::after {
   width: 100%;
   height: 260px;
 }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  header {
-    width: 50% !important;
-  }
-  header__logo {
-    text-align: center;
-  }
-  .search {
-    position: absolute;
-    top: 1rem;
-    right: 0;
-    width: 50%;
-    background: #ffffff;
-    border-top: none;
-    padding-top: 1rem;
-  }
-  .operation ul {
-    flex-direction: row;
-  }
-  .operation ul .list {
-    width: 30%;
-  }
+@media only screen and (min-width: 768px) {
   .section__hero--image img {
     width: 100%;
     height: 300px;
-  }
-  .restaurants__wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    gap: 2rem;
-  }
-  .restaurants__wrapper a {
-    width: calc(50% - 1rem);
-    height: auto;
-  }
-  .restaurants__wrapper a .card {
-    height: auto;
-  }
-  .entrees__cards,
-.plats__cards,
-.desserts__cards {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 0 1rem;
-    gap: 1rem;
-  }
-  .card {
-    min-width: 100px;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 200px;
-    padding: 1rem;
-    border: 1px solid white;
-  }
-  .footer__logo {
-    width: 30%;
-    font-size: 2.5rem;
-    text-align: center;
-    border: 1px solid red;
-  }
-  footer ul {
-    border: 1px solid green;
-    width: 30%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2%;
-  }
-  footer ul li {
-    width: 49%;
-    border: 1px solid blue;
-  }
-}
-@media screen and (min-width: 1025px) {
-  header {
-    width: 50% !important;
-  }
-  header__logo {
-    text-align: center;
-  }
-  .search {
-    position: absolute;
-    top: 1rem;
-    right: 0;
-    width: 50%;
-    background: #ffffff;
-    border-top: none;
-    padding-top: 1rem;
-  }
-  .section__hero--image img {
-    width: 100%;
-    height: 300px;
-  }
-  .menu__wrapper {
-    flex-direction: row;
-  }
-  .operation ul {
-    flex-direction: row;
-  }
-  .operation ul .list {
-    width: 30%;
-  }
-  .restaurants__wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    gap: 2rem;
-  }
-  .restaurants__wrapper a {
-    width: 22%;
-    height: auto;
-  }
-  .restaurants__wrapper a .card {
-    min-height: 270px;
-    min-width: 0;
-  }
-  .restaurants__wrapper a img {
-    min-height: 200px;
-  }
-  .restaurants__wrapper .icon__toggle .bi {
-    bottom: 2%;
-    right: 5%;
   }
 }/*# sourceMappingURL=styles.css.map */
