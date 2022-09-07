@@ -3,8 +3,8 @@
 @import "./base/global";
 
 @import "./sass-utils/variables";
-@import "./sass-utils/animations";
 @import "./sass-utils/mixins";
+@import "./sass-utils/animations";
 
 @import "./components/buttons";
 @import "./components/icon-heart";
@@ -20,5 +20,3 @@
 @import "./layout/section__restaurants";
 @import "./layout/section__hero";
 @import "./layout/desktop-layout";
-
-//mixin pour responsive pour chaque format d'ecran

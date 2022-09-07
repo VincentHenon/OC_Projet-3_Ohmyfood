@@ -51,3 +51,26 @@
         }
     }
 }
+
+// @mixin responsive_height ($var-height) {
+//     @if $var-height==short {
+//         @media only screen and (max-height: 399px) {
+//             $var-smoke: -20vmin;
+//             @content;
+//         }
+//     }
+
+//     @if $var-height==med {
+//         @media only screen and (min-height: 400px) and (max-height: 799px) {
+//             $var-smoke: 0;
+//             @content;
+//         }
+//     }
+
+//     @if $var-height==tall {
+//         @media only screen and (min-height: 800px) {
+//             $var-smoke: 20vmin;
+//             @content;
+//         }
+//     }
+// }
