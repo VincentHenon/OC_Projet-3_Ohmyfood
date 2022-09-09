@@ -1,14 +1,5 @@
 //mixins//
 
-//animation delay//
-@mixin cardsAnimationDelay {
-    @for $i from 1 through 10 {
-        .card--#{$i} {
-            animation-delay: 0 + ($i * 0.1s);
-        }
-    }
-}
-
 //flex box//
 @mixin flex-column {
     display: flex;

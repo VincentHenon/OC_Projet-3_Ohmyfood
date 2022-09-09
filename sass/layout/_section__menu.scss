@@ -87,7 +87,6 @@
     white-space: nowrap;
     cursor: pointer;
     animation: fadeInSlide 1.5s ease-in;
-    @include cardsAnimationDelay;
     animation-iteration-count: 1;
 
 
@@ -147,4 +146,10 @@
 
 .card:hover .card--icon {
     transform: rotate(360deg);
+}
+
+@for $i from 1 through 10 {
+    .card--#{$i} {
+        animation-delay: 0 + ($i * 0.1s);
+    }
 }
