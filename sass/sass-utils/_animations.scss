@@ -42,3 +42,48 @@
         background-position: 0% 50%;
     }
 }
+
+@keyframes fall-1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(800%) rotate(170deg);
+    }
+}
+
+@keyframes fall-2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(800%) rotate(-195deg);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        z-index: 100;
+    }
+
+    50% {
+        opacity: 0.95;
+    }
+
+    100% {
+        z-index: -10;
+        opacity: 0;
+    }
+}
+
+@keyframes boiling {
+    0% {
+        transform: rotate(.5deg);
+    }
+
+    100% {
+        transform: rotate(-.5deg);
+    }
+}

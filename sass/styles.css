@@ -239,6 +239,78 @@ body section {
     background-position: 0% 50%;
   }
 }
+@-webkit-keyframes fall-1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(800%) rotate(170deg);
+  }
+}
+@keyframes fall-1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(800%) rotate(170deg);
+  }
+}
+@-webkit-keyframes fall-2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(800%) rotate(-195deg);
+  }
+}
+@keyframes fall-2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(800%) rotate(-195deg);
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    z-index: 100;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    z-index: -10;
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    z-index: 100;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    z-index: -10;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes boiling {
+  0% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: rotate(-0.5deg);
+  }
+}
+@keyframes boiling {
+  0% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: rotate(-0.5deg);
+  }
+}
 .btn--gradient {
   padding: 0.9rem 1.5rem;
   border-radius: 2rem;
@@ -433,21 +505,6 @@ footer ul li a p:hover::after {
   opacity: 1;
 }
 
-@-webkit-keyframes fadeOut {
-  0% {
-    z-index: 100;
-    opacity: 1;
-  }
-  99% {
-    z-index: 100;
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -100;
-  }
-}
-
 @keyframes fadeOut {
   0% {
     z-index: 100;
@@ -478,94 +535,27 @@ footer ul li a p:hover::after {
           animation-fill-mode: forwards;
 }
 
-.smoke {
-  position: absolute;
-  opacity: 1;
-  background: #eaeaea;
-  border-radius: 50% 50%;
-  transform-origin: center;
-}
-
-.smoke-2,
-.smoke-3,
-.smoke-7 {
-  transform: translateY(0%);
-  -webkit-animation: smoking 3s linear;
-          animation: smoking 3s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.smoke-1 {
-  bottom: 26%;
-  left: 42%;
-  width: 10vmin;
-  height: 10vmin;
-  -webkit-animation: smoking-2 3s linear;
-          animation: smoking-2 3s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.smoke-2 {
-  bottom: 19%;
-  left: 47%;
-  width: 15vmin;
-  height: 15vmin;
-}
-
-.smoke-3 {
-  bottom: 25%;
-  left: 37%;
-  width: 20vmin;
-  height: 20vmin;
-}
-
-.smoke-4 {
-  bottom: 24%;
-  left: 44%;
-  width: 25vmin;
-  height: 25vmin;
-}
-
-.smoke-5 {
-  bottom: 20%;
-  left: 45%;
-  width: 21vmin;
-  height: 21vmin;
-}
-
-.smoke-6 {
-  bottom: 17%;
-  left: 33.5%;
-  width: 23vmin;
-  height: 23vmin;
-}
-
-.smoke-7 {
-  bottom: 34%;
-  left: 52%;
-  width: 15vmin;
-  height: 15vmin;
-}
-
-.smoke-8 {
-  bottom: 31%;
-  left: 50%;
-  width: 15vmin;
-  height: 15vmin;
-  -webkit-animation: smoking-2 5s linear;
-          animation: smoking-2 5s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
 .veg {
   position: relative;
   width: 45%;
   transform-origin: center;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .veg {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .veg {
+    width: 15%;
+  }
+}
+@media (orientation: landscape) {
+  .veg {
+    width: 15%;
+  }
 }
 
 .tomato {
@@ -640,83 +630,15 @@ footer ul li a p:hover::after {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-
-@-webkit-keyframes fall-1 {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(800%) rotate(170deg);
-  }
-}
-
-@keyframes fall-1 {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(800%) rotate(170deg);
-  }
-}
-@-webkit-keyframes fall-2 {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(800%) rotate(-195deg);
-  }
-}
-@keyframes fall-2 {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(800%) rotate(-195deg);
-  }
-}
-@keyframes fadeOut {
-  0% {
-    z-index: 100;
-  }
-  50% {
-    opacity: 0.95;
-  }
-  100% {
-    z-index: -10;
-    opacity: 0;
-  }
-}
-@-webkit-keyframes boiling {
-  0% {
-    transform: rotate(0.5deg);
-  }
-  100% {
-    transform: rotate(-0.5deg);
-  }
-}
-@keyframes boiling {
-  0% {
-    transform: rotate(0.5deg);
-  }
-  100% {
-    transform: rotate(-0.5deg);
-  }
-}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .pot {
     width: 40%;
     bottom: -10%;
   }
-  .veg {
-    width: 20%;
-  }
 }
 @media only screen and (min-width: 1025px) {
   .pot {
     width: 30%;
-  }
-  .veg {
-    width: 15%;
   }
 }
 @media (orientation: landscape) {
@@ -724,10 +646,8 @@ footer ul li a p:hover::after {
     width: 30%;
     bottom: -5%;
   }
-  .veg {
-    width: 15%;
-  }
 }
+
 .search {
   width: 100%;
   padding: 1rem 0 1rem 0;
